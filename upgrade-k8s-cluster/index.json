@@ -1,6 +1,6 @@
 {
   "title": "Upgrade a Kubernetes cluster with kubeadm",
-  "description": "Upgrade a kubernetes cluster from using kubeadm",
+  "description": "Upgrade a kubernetes cluster using kubeadm",
   "difficulty": "Intermediate",
   "time": "10-15 minutes",
   "details": {
