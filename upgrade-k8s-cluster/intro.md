@@ -1,0 +1,1 @@
+In this scenario you will go through the process of upgrading a two node (master + node) Kubernetes cluster
