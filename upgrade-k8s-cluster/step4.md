@@ -1,8 +1,13 @@
 Prepare the worker node for the upgrade by draining it.
 
 ```
-kubectl drain node01 --ignore-daemonsets
+kubectl drain node01 --ignore-daemonsets --delete-local-data
 ```{{ execute HOST1 }}
+
+_*Note:* The `--delete-local-data` flag is used to clear out the
+coreDNS pods in this case. In the real world you'd want to make sure
+that the pods with local storage aren't going to cause significant
+problems before running it._
 
 Perform the upgrade with kubeadm
 
@@ -29,4 +34,10 @@ multiple nodes, you would then continue updating each node.
 
 ```
 kubectl uncordon node01
+```{{ execute HOST1 }}
+
+Check the status of the pods that are running
+
+```
+kubectl get pods --all-namespaces
 ```{{ execute HOST1 }}
