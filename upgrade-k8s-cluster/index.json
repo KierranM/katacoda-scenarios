@@ -1,6 +1,6 @@
 {
   "title": "Upgrade a Kubernetes cluster with kubeadm",
-  "description": "Upgrade a kubernetes cluster from 1.14 to 1.15 using kubeadm",
+  "description": "Upgrade a kubernetes cluster from using kubeadm",
   "difficulty": "Intermediate",
   "time": "10-15 minutes",
   "details": {
@@ -23,7 +23,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "init.sh"
     },
     "finish": {
       "text": "finish.md"
