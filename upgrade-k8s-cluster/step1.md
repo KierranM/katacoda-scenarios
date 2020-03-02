@@ -21,3 +21,6 @@ health:
 ```
 kubectl get pods
 ```{{ execute HOST1 }}
+
+With the current state of the cluster assessed, we can move on to updating the
+master.
