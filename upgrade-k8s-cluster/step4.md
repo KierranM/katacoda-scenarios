@@ -1,4 +1,4 @@
-Prepare the worker node for the upgrade by draining it.
+Prepare the worker node for the upgrade by draining it from the master
 
 ```
 kubectl drain node01 --ignore-daemonsets --delete-local-data
@@ -16,7 +16,7 @@ kubeadm upgrade node
 ```{{ execute HOST2 }}
 
 You can now update the kubelet and kubectl versions on the node. These should
-be updated to the same version used to install kubeadm.
+be updated to the same version used to install kubeadm (i.e `1.15.10-00`).
 
 ```
 apt-get install -y --allow-change-held-packages kubelet=<version> kubectl=<version>

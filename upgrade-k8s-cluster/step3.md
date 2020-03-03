@@ -22,7 +22,7 @@ components that are deployed as static pods.
 
 Now that the components have been updated, you can update the kubelet
 and kubectl versions on the master. These should be updated to the same
-version used to install kubeadm.
+version used to install kubeadm (i.e `1.15.10-00`).
 
 ```
 apt-get install -y --allow-change-held-packages kubelet=<version> kubectl=<version>
