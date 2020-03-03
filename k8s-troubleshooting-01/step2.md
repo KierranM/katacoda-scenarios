@@ -18,4 +18,6 @@ kubectl -n my-website
 ```{{ copy }}
 
 You can check the `My Website` tab, or browse to https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
-to check the status of the website
+to check the status of the website.
+
+_**Note:** Until the service is working, navigating to this page will display the Katacoda error page_
