@@ -1,0 +1,44 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: my-website
+  name: my-website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-website
+  template:
+    metadata:
+      labels:
+        app: my-website
+    spec:
+      containers:
+      - image: katacoda/docker-http-server:latest
+        name: docker-http-server
+        ports:
+          - containerPort: 80
+        resources:
+          requests:
+            cpu: 250m
+            memory: 256Mi
+          limits:
+            cpu: 500m
+            memory: 1Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-website
+  labels:
+    app: my-website
+spec:
+  ports:
+    - port: 8080
+      targetPort: 80
+  externalIPs:
+    - HOSTIP
+  selector:
+    app: my-website

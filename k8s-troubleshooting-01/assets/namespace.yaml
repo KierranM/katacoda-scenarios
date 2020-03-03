@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-website
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: my-website-quota
+  namespace: my-website
+spec:
+  hard:
+    requests.cpu: "1"
+    requests.memory: 512Mi
+    limits.cpu: "1"
+    limits.memory: 512Mi
