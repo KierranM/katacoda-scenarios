@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 echo "Starting Kubernetes..."
-while [ `docker ps | wc -l` -eq 1 ]
+until minikube status
 do
   sleep 1
 done
