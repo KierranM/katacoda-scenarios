@@ -6,9 +6,3 @@ until minikube status > /dev/null; do
 done
 echo "Kubernetes is ready"
 ```
-
-The deployment manifest is located here:
-
-```
-cat ~/my-website.yaml
-```{{execute}}
