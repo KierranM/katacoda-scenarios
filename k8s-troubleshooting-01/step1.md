@@ -5,4 +5,4 @@ until minikube status > /dev/null; do
   sleep 1
 done
 echo "Kubernetes is ready"
-```
+```{{ execute }}
