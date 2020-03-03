@@ -19,7 +19,8 @@
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "code": "step1-wait.sh"
       },
       {
         "title": "Step 2",
