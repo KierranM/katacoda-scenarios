@@ -9,7 +9,7 @@ coreDNS pods in this case. In the real world you'd want to make sure
 that the pods with local storage aren't going to cause significant
 problems before running it._
 
-Perform the upgrade with kubeadm
+On the worker node, perform the upgrade with kubeadm
 
 ```
 kubeadm upgrade node
@@ -20,7 +20,7 @@ be updated to the same version used to install kubeadm (i.e `1.15.10-00`).
 
 ```
 apt-get install -y --allow-change-held-packages kubelet=<version> kubectl=<version>
-```
+```{{ copy }}
 
 Check that the node has updated (this may take a minute or so to update):
 

@@ -15,7 +15,7 @@ You can then run the command output by the plan to perform your upgrade. I.e:
 
 ```
 kubeadm upgrade apply <version>
-```
+```{{ copy }}
 
 Kubeadm will perform a backup of etcd automatically before updating the
 components that are deployed as static pods.
@@ -26,7 +26,7 @@ version used to install kubeadm (i.e `1.15.10-00`).
 
 ```
 apt-get install -y --allow-change-held-packages kubelet=<version> kubectl=<version>
-```
+```{{ copy }}
 
 Check that the master node has updated (this may take a minute or so to update):
 
