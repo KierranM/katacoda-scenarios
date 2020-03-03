@@ -25,7 +25,7 @@ to list all 1.15 versions:
 apt-cache madison kubeadm | grep 1.15
 ```{{ execute HOST1 }}
 
-You can then install that specific version on *both master and node* (i.e `1.15.10-00`)
+You can then install that specific version on **both the master and worker node** (i.e `1.15.10-00`)
 
 ```
 apt-get install -y --allow-change-held-packages kubeadm=<version>
