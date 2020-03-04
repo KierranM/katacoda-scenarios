@@ -1,7 +1,7 @@
 {
   "title": "Troubleshooting Kubernetes Pods #01",
   "description": "Troubleshoout a pod deployment that isn't starting",
-  "difficulty": "Beginner",
+  "difficulty": "Intermediate",
   "time": "10-15 minutes",
   "details": {
     "assets": {
