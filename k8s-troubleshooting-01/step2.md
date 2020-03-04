@@ -1,3 +1,10 @@
+**Scenario:** You have created a deployment for a website, but the
+application appears to be unreachable. Your task is to figure out why and
+fix the problem. You may need to make changes to the deployment, service,
+or namespace to get the website working.
+
+The deployment is called `my-website` in the `my-website` namespace.
+
 Here are some Kubernetes reference docs you may find useful:
 
 - [Kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
@@ -11,11 +18,11 @@ The deployment manifest is located here:
 cat ~/my-website.yaml
 ```{{ execute }}
 
-The deployment has been deployed to the `my-website` namespace
-
+If you want to be able to quickly run commands against the namespace you can
+use this alias:
 ```
-kubectl -n my-website
-```{{ copy }}
+alias k="kubectl -n my-website"
+```{{ execute }}
 
 You can check the `My Website` tab, or browse to https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
 to check the status of the website.
